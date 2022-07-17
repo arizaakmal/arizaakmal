@@ -1,0 +1,53 @@
+.nav-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: auto;
+}
+
+.jumbotron {
+  background-image: url("../img/black-wavy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 25px;
+}
+.jumbotron img {
+  width: 15%;
+}
+
+.bi-arrow-down-circle-fill {
+  width: 30px;
+  height: 30px;
+}
+
+.about-me {
+  margin-top: 10px;
+}
+
+.portfolio {
+  background-color: #000000;
+  z-index: -1;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.btn-outline-dark {
+  z-index: 1;
+}
+
+.form-control:focus {
+  border-color: #212529;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #212529;
+}
+
+.form-check-input:checked {
+  background-color: #212529;
+}
+
+.form-check-input:focus {
+  border-color: #212529;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #212529;
+}/*# sourceMappingURL=main.css.map */
