@@ -1,3 +1,17 @@
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.logo {
+  transition: transform 0.5s ease-in-out;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+
 .nav-item {
   display: inline-block;
   margin-right: 1rem;
@@ -11,6 +25,10 @@
   background-size: cover;
   color: #fff;
   padding: 100px 25px;
+}
+.jumbotron h2 {
+  font-family: "Times New Roman PS Bold", sans-serif;
+  font-weight: bold;
 }
 .jumbotron img {
   width: 15%;

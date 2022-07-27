@@ -1,3 +1,35 @@
+// html {
+//   font-size: 16px;
+//   font-family: "Roboto", sans-serif;
+//   color: #333;
+//   line-height: 1.5;
+//   font-weight: 400;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.logo {
+  //make img infinite rotate 360degree on hover
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// .logo:hover {
+//   // -webkit-transform: rotate(360deg);
+//   // transform: rotate(360deg);
+// }
+
 .nav-item {
   display: inline-block;
   margin-right: 1rem;
@@ -13,6 +45,10 @@
   color: #fff;
   padding: 100px 25px;
 
+  h2 {
+    font-family: "Times New Roman PS Bold", sans-serif;
+    font-weight: bold;
+  }
   img {
     width: 15%;
   }
