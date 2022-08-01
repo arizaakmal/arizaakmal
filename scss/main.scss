@@ -1,12 +1,9 @@
-// html {
-//   font-size: 16px;
-//   font-family: "Roboto", sans-serif;
-//   color: #333;
-//   line-height: 1.5;
-//   font-weight: 400;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .navbar-brand {
   font-size: 1.75rem;
@@ -37,10 +34,11 @@
 }
 
 .jumbotron {
+  height: 100vh;
   background-image: url("../img/black-wavy.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   color: #fff;
   padding: 100px 25px;
@@ -52,11 +50,6 @@
   img {
     width: 15%;
   }
-}
-
-.bi-arrow-down-circle-fill {
-  width: 30px;
-  height: 30px;
 }
 
 .about-me {
@@ -71,6 +64,7 @@
 
 .navbar {
   z-index: 1;
+  background: transparent;
 }
 
 .btn-outline-dark {
@@ -89,4 +83,51 @@
 .form-check-input:focus {
   border-color: #212529;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #212529;
+}
+
+.line {
+  width: 5%;
+  height: 5px;
+  border: none;
+  background-color: #6c757d;
+  margin: auto;
+}
+
+.category {
+  font-size: 12px;
+  margin-right: 3px;
+  padding: 2px 7px;
+  // padding-top: 3px;
+  // padding-bottom: 3px;
+}
+
+//make logo in class footer-link like in navbar
+.footer-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.bi-chevron-down {
+  color: white;
+  opacity: 0.5;
+
+  //make icon opacity 1 when hover
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon-white {
+  color: white;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

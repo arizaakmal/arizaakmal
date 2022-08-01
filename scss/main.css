@@ -1,3 +1,10 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar-brand {
   font-size: 1.75rem;
   font-weight: 700;
@@ -19,10 +26,11 @@
 }
 
 .jumbotron {
+  height: 100vh;
   background-image: url("../img/black-wavy.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fff;
   padding: 100px 25px;
 }
@@ -32,11 +40,6 @@
 }
 .jumbotron img {
   width: 15%;
-}
-
-.bi-arrow-down-circle-fill {
-  width: 30px;
-  height: 30px;
 }
 
 .about-me {
@@ -50,6 +53,7 @@
 
 .navbar {
   z-index: 1;
+  background: transparent;
 }
 
 .btn-outline-dark {
@@ -68,4 +72,45 @@
 .form-check-input:focus {
   border-color: #212529;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #212529;
+}
+
+.line {
+  width: 5%;
+  height: 5px;
+  border: none;
+  background-color: #6c757d;
+  margin: auto;
+}
+
+.category {
+  font-size: 12px;
+  margin-right: 3px;
+  padding: 2px 7px;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.bi-chevron-down {
+  color: white;
+  opacity: 0.5;
+}
+.bi-chevron-down:hover {
+  opacity: 0.8;
+}
+
+.icon-white {
+  color: white;
+  opacity: 0.5;
+}
+.icon-white:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */
