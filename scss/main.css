@@ -1,8 +1,17 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 .navbar-brand {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 30px;
   color: #fff;
+}
+.navbar-brand:hover {
+  opacity: 0.8;
 }
 
 .logo {
@@ -24,6 +33,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   padding: 100px 25px;
 }
@@ -35,13 +45,16 @@
   width: 15%;
 }
 
-.about-me {
-  margin-top: 10px;
+.about img {
+  width: 70%;
 }
 
 .portfolio {
   background-color: #000000;
+  position: relative;
+  bottom: 1px;
   z-index: -1;
+  padding-top: 7rem;
 }
 
 .navbar {
@@ -59,6 +72,7 @@
 }
 
 .form-check-input:checked {
+  border-color: #212529;
   background-color: #212529;
 }
 
@@ -67,12 +81,10 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #212529;
 }
 
-.line {
-  width: 5%;
-  height: 5px;
-  border: none;
-  background-color: #6c757d;
+hr {
   margin: auto;
+  height: 2px;
+  background-color: darkred;
 }
 
 .category {
@@ -89,7 +101,7 @@
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 9rem;
 }
 
 .bi-chevron-down {
@@ -110,4 +122,63 @@ section {
 
 .img-thumbnail {
   border-width: 0;
+}
+
+th {
+  font-size: 1.2rem;
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.skills {
+  margin-left: 6rem;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+.link:hover {
+  color: black;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
