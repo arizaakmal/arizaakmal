@@ -181,4 +181,19 @@ th {
 .link:hover {
   color: black;
   text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

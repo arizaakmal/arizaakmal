@@ -223,3 +223,22 @@ th {
     text-decoration: underline;
   }
 }
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+// .nav-page {
+//   margin-inline-start: 450px;
+// }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
