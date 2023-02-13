@@ -137,17 +137,7 @@ th {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 1.5s;
   animation: fadeIn 1.5s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -196,4 +186,20 @@ th {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+form.sending .btn-loading {
+  display: inline-block;
+}
+
+form.sending .btn[type=submit] {
+  display: none;
+}
+
+form:not(.sending) .btn-loading {
+  display: none;
+}
+
+form:not(.sending) .btn[type=submit] {
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */

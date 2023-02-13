@@ -242,3 +242,19 @@ th {
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+form.sending .btn-loading {
+  display: inline-block;
+}
+
+form.sending .btn[type="submit"] {
+  display: none;
+}
+
+form:not(.sending) .btn-loading {
+  display: none;
+}
+
+form:not(.sending) .btn[type="submit"] {
+  display: inline-block;
+}
