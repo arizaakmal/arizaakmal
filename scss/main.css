@@ -202,4 +202,26 @@ form:not(.sending) .btn-loading {
 
 form:not(.sending) .btn[type=submit] {
   display: inline-block;
+}
+
+/* warna latar belakang untuk tanda halaman yang tidak aktif */
+.swiper-pagination-bullet {
+  opacity: 0.5 !important;
+  background-color: #c7c7cf !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #198754 !important; /* warna latar belakang untuk tanda halaman yang aktif */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 2rem;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: #c7c7cf !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */

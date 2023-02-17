@@ -258,3 +258,37 @@ form:not(.sending) .btn-loading {
 form:not(.sending) .btn[type="submit"] {
   display: inline-block;
 }
+
+// .swiper-pagination {
+//    color: #3e2bce !important; /* warna teks */
+//   background-color: #3e2bce !important; /* warna latar belakang */
+// }
+
+/* warna latar belakang untuk tanda halaman yang tidak aktif */
+.swiper-pagination-bullet {
+  opacity: 0.5 !important;
+  background-color: #c7c7cf !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #198754 !important; /* warna latar belakang untuk tanda halaman yang aktif */
+}
+
+//buat swiper-button-next dan swiper-button-prev ketika di hover muncul warna background dan berbentuk lingkaran
+.swiper-button-next,
+.swiper-button-prev {
+  // background-color: #198754;
+  // border-radius: 50%;
+  padding: 2rem;
+  // width: 22px !important;
+  // height: 22px !important;
+  //rounded circle
+  // width: 0.5rem !important;
+
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: #c7c7cf !important;
+  &:hover {
+    opacity: 0.8;
+  }
+}
