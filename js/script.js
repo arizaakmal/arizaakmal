@@ -35,55 +35,8 @@ $(document).ready(function () {
   // fadeTo dijalankan setelah 3s
   $("#fadeTo").fadeTo(3000, 0.3);
 
-  //make scroll top button
-  // $(window).scroll(function () {
-
-  //   if ($(this).scrollTop() > 100) { //
-  //     $(".scroll-top").fadeIn();
-  //   } else {
-  //     $(".scroll-top").fadeOut();
-  //   }
-  // });
-
-  //jika berada di section dengan id home tombol scroll-top akan hilang sedangkan jika berada di halaman lain tombol scroll-top akan muncul dan jika di klik akan scroll ke atas
-
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $(".scroll-top").fadeIn();
-  //   } else {
-  //     $(".scroll-top").fadeOut();
-  //   }
-  // });
-
-  /**
-   * Scroll top button
-   */
-  // const $scrollTop = $(".scroll-top");
-  // if ($scrollTop.length) {
-  //   $(window).on("scroll", function () {
-  //     if ($(this).scrollTop() > 100) {
-  //       $scrollTop.toggle("visually-hidden");
-  //     } else {
-  //       $scrollTop.fadeOut();
-  //     }
-  //   });
-
-  //   $scrollTop.on("click", function () {
-  //     $("html, body").animate(
-  //       {
-  //         scrollTop: 0,
-  //       },
-  //       500
-  //     );
-  //   });
-  // }
-
-  //ganti kode scroll top button di atas dengan jquery
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $(".scroll-top").fadeIn();
-  //   } else {
-  //     $(".scroll-top").fadeOut();
-  //   }
-  // });
+  //membuat halaman preloader
+  $(window).on("load", function () {
+    $(".preloader").fadeOut("slow");
+  });
 });

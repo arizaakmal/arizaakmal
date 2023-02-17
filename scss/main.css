@@ -211,6 +211,7 @@ form:not(.sending) .btn[type=submit] {
 }
 
 .swiper-pagination-bullet-active {
+  opacity: 1 !important;
   background-color: #198754 !important; /* warna latar belakang untuk tanda halaman yang aktif */
 }
 
@@ -224,4 +225,12 @@ form:not(.sending) .btn[type=submit] {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   opacity: 0.8;
+}
+
+.preloader {
+  z-index: 999;
+}
+
+.scroll-top {
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
