@@ -4,20 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ariza Akmal Syahida | Web Developer</title>
+
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Favicon
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.min.css" />
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body class="body">
+  <body class="body me-0">
     <!-- preloader -->
     <div class="preloader position-fixed top-0 start-0 w-100 h-100 bg-dark">
       <div class="text-bg-dark position-absolute top-50 start-50 translate-middle">
@@ -39,7 +44,7 @@
         <span></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav d-flex ms-auto">
+        <ul class="navbar-nav d-flex ms-3 action">
           <li class="nav-item active">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -56,7 +61,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav d-inline ms-auto">
+        <ul class="navbar-nav d-inline">
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ariza-akmal-syahida-593aa5221/">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -126,12 +131,12 @@
             <hr class="my-4" width="65%" />
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div data-aos="zoom-in" data-aos-duration="2000" class="row justify-content-center">
           <div class="col-md-4">
             <img src="img/ariza2.jpg" class="rounded-circle float img-thumbnail" alt="Ariza Akmal Syahida" width="200" />
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div data-aos="fade-up" class="row justify-content-center">
           <div class="col-md-6">
             <p class="fs-5 mt-3">
               Hello! My name is Ariza Akmal Syahida from Yogyakarta, Indonesia. I'm a web developer and a Bachelor of Informatics college student at <a href="https://home.amikom.ac.id/" class="link" target="_blank">Amikom University</a>. I
@@ -149,42 +154,19 @@
             <hr class="my-4" width="65%" />
           </div>
         </div>
-        <div class="row skills justify-content-center fs-5">
-          <div class="col-md-2">
-            <h5>Languages</h5>
-            <!-- makeul li with boostrap -->
-            <ul class="list-group">
-              <li class="list-group-item">HTML</li>
-              <li class="list-group-item">CSS</li>
-              <li class="list-group-item">Javascript</li>
-              <li class="list-group-item">PHP</li>
-              <li class="list-group-item">SQL</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h5>Framework</h5>
-
-            <ul class="list-group">
-              <li class="list-group-item">Laravel</li>
-              <li class="list-group-item">Bootstrap</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h5>Database</h5>
-            <ul class="list-group">
-              <li class="list-group-item">MySQL</li>
-              <li class="list-group-item">PostgreSQL</li>
-              <li class="list-group-item">Microsoft SQL Server</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h5>Tools</h5>
-            <ul class="list-group">
-              <li class="list-group-item">Bash</li>
-              <li class="list-group-item">Git</li>
-              <li class="list-group-item">Github</li>
-              <li class="list-group-item">Visual Studio Code</li>
-            </ul>
+        <div data-aos="fade-up" data-aos-duration="1000" class="container d-block col-sm-6 col-md-8">
+          <div class="row justify-content-center">
+            <img src="img/skills/html-5.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="html-5" />
+            <img src="img/skills/css-3.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="css-3" />
+            <img src="img/skills/js.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="js" />
+            <img src="img/skills/php.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="php" />
+            <img src="img/skills/c-.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-" />
+            <img src="img/skills/c-sharp.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-sharp" />
+            <img src="img/skills/sass.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sass" />
+            <img src="img/skills/mysql.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="mysql" />
+            <img src="img/skills/postgre.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="postgre" />
+            <img src="img/skills/sql-server.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sql-server" />
+            <img src="img/skills/bootstrap.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="bootstrap" />
           </div>
         </div>
       </div>
@@ -201,17 +183,17 @@
       <!-- Portfolio -->
       <section id="portfolio" class="portfolio pb-5">
         <div class="container">
-          <div class="row">
+          <div data-aos="fade-up" data-aos-duration="2000" class="row">
             <div class="col">
               <h3 class="text-center text-white mt-3">Portfolio</h3>
               <hr class="my-4 text-white line" />
             </div>
           </div>
-          <div class="swiper mySwiper">
+          <div data-aos="flip-up" data-aos-duration="2000" class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/1.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/1.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -223,8 +205,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/2.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/2.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -236,8 +218,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/3.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/3.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -249,8 +231,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/4.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/4.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -262,8 +244,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/5.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/5.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -275,8 +257,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/6.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/6.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -288,8 +270,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/7.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/7.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -301,8 +283,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card text-bg-dark" style="width: 16rem">
-                  <img src="img/portfolio/8.jpg" class="card-img-top" alt="..." />
+                <div class="card text-bg-dark mx-auto" style="width: 16rem">
+                  <img src="img/portfolio/8.jpg" loading="lazy" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -334,7 +316,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Thanks!</strong> Your message has been received.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -370,7 +352,7 @@
               </button>
             </form>
           </div>
-          <div class="col-md-6 mt-3">
+          <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6 mt-3">
             <div class="embed-responsive embed-responsive-16by9">
               <!-- make iframe responsive -->
               <iframe
@@ -453,8 +435,18 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         cssMode: true,
-        slidesPerView: 4,
-        spaceBetween: 30,
+        breakpoints: {
+          // Atur jumlah slide untuk lebar layar tertentu
+          992: {
+            slidesPerView: 4, // Atur 2 slide pada lebar layar 768px dan di bawahnya
+            spaceBetween: 30,
+          },
+          576: {
+            slidesPerView: 1, // Atur 1 slide pada lebar layar 480px dan di bawahnya
+            centeredSlides: true,
+            spaceBetween: 0,
+          },
+        },
         rewind: true,
         navigation: {
           nextEl: ".swiper-button-next",
@@ -467,6 +459,12 @@
         mousewheel: true,
         keyboard: true,
       });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- Javascript Contact Form -->

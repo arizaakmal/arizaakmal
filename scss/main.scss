@@ -2,6 +2,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 .navbar-brand {
@@ -300,4 +301,12 @@ form:not(.sending) .btn[type="submit"] {
 
 .scroll-top {
   z-index: 1;
+}
+
+.icon-skill {
+  width: 96px;
+  opacity: 0.5;
+  &:hover {
+    opacity: 0.8;
+  }
 }

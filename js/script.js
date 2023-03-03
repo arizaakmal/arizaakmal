@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  //when click button navbar-toggler make nav always add class bg-dark
+  //scroll
+  $(window).scrollTop(0);
 
   $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
