@@ -1,21 +1,28 @@
 $(document).ready(function () {
-  //scroll
   $(window).scrollTop(0);
+
+  // Tambahkan class "bg-dark" pada nav jika scrollTop lebih besar dari 50
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $("nav").addClass("bg-dark");
+    } else if (!$(".navbar-collapse").hasClass("show")) {
+      $("nav").removeClass("bg-dark");
+    }
+  });
+
+  // Hilangkan class "bg-dark" pada nav jika navbar-toggler di-klik dan scrollTop kurang dari 50
+  $(".navbar-toggler").click(function () {
+    $("nav").addClass("bg-dark");
+  });
 
   $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
       $(".scroll-top").fadeIn(1000);
       $(".scroll-top").removeClass("visually-hidden");
-      $("nav").addClass("bg-dark");
     } else {
-      $("nav").removeClass("bg-dark");
       //$(".scroll-top").fadeIn(1000);
       $(".scroll-top").addClass("visually-hidden");
     }
-  });
-
-  $(".navbar-toggler").click(function () {
-    $("nav").toggleClass("bg-dark");
   });
 
   $(document).on("scroll", function () {
