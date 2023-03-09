@@ -20,7 +20,6 @@ $(document).ready(function () {
       $(".scroll-top").fadeIn(1000);
       $(".scroll-top").removeClass("visually-hidden");
     } else {
-      //$(".scroll-top").fadeIn(1000);
       $(".scroll-top").addClass("visually-hidden");
     }
   });
