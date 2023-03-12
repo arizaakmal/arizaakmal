@@ -40,7 +40,7 @@ $(document).ready(function () {
     }
   });
   // fadeTo dijalankan setelah 3s
-  $("#fadeTo").fadeTo(3000, 0.3);
+  $("#fadeTo").fadeTo(7000, 0.3);
 
   //membuat halaman preloader
   $(window).on("load", function () {
