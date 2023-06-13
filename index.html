@@ -8,16 +8,14 @@
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- Favicon
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-
+    <!-- TypewriterJS -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.min.css" />
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
@@ -110,9 +108,10 @@
       <!-- <img src="img/ariza2.jpg" class="rounded-circle float img-thumbnail text-bg-dark fadeIn" alt="Ariza Akmal Syahida" /> -->
       <div class="position-absolute top-50 start-50 translate-middle">
         <h1 class="text-center mt-3 display-5 opacity-75 hi"><span id="fadeTo">HI!, I'M </span></h1>
+
         <h1 class="text-center display-4 opacity-75 nama">ARIZA AKMAL SYAHIDA</h1>
         <!-- <h3 class="text-center lead opacity-75 status">Web Developer</h3> -->
-        <span class="typewriter opacity-75"></span>
+        <span id="app" class="typewriter opacity-75"></span>
         <hr class="my-4" width="100" />
         <!-- <hr class="my-4 line" /> -->
         <a href="#about">
@@ -131,6 +130,7 @@
         <div class="row">
           <div class="col">
             <h3 class="about-me fw-semibold opacity-75">About Me</h3>
+
             <hr class="my-4" width="65%" />
           </div>
         </div>
@@ -153,7 +153,7 @@
       <div class="container">
         <div class="row mb-3">
           <div class="col">
-            <h3 class="text-center fw-semibold opacity-75">Skills</h3>
+            <h3 class="text-center fw-semibold opacity-75">Skills & Technology</h3>
             <hr class="my-4" width="65%" />
           </div>
         </div>
@@ -163,13 +163,19 @@
             <img src="img/skills/css-3.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="css-3" />
             <img src="img/skills/js.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="js" />
             <img src="img/skills/php.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="php" />
-            <img src="img/skills/c-.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-" />
-            <img src="img/skills/c-sharp.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-sharp" />
+            <!-- <img src="img/skills/c-.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-" />
+            <img src="img/skills/c-sharp.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="c-sharp" /> -->
             <img src="img/skills/sass.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sass" />
+            <img src="img/skills/jquery-plain-wordmark.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="jquery-plain-wordmark" />
             <img src="img/skills/mysql.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="mysql" />
-            <img src="img/skills/postgre.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="postgre" />
-            <img src="img/skills/sql-server.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sql-server" />
+            <!-- <img src="img/skills/postgre.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="postgre" /> -->
+            <!-- <img src="img/skills/sql-server.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sql-server" /> -->
             <img src="img/skills/bootstrap.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="bootstrap" />
+            <img src="img/skills/tailwind-css.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="tailwind-css" />
+            <img src="img/skills/laravel.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="laravel" />
+            <img src="img/skills/git.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="git" />
+            <img src="img/skills/visual-studio-code.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="visual-studio-code" />
+            <img src="img/skills/figma.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="figma" />
           </div>
         </div>
       </div>
@@ -195,13 +201,19 @@
           <div class="container bg-dark text-center rounded-3 w-75" data-aos="flip-up" data-aos-duration="2000">
             <h4 class="text-white pt-5 opacity-75">Novelpedia</h4>
             <div class="mb-3">
-              <img src="/img/portfolio/novelpedia.png" alt="gambar" class="w-50 img-fluid" />
+              <img src="/img/portfolio/novelpedia.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
             </div>
-            <p class="text-white px-5 opacity-75">
+            <!-- buat label untuk jenis teknologi yg digunakan seperti laravel, boostrap, jquery, sass -->
+            <div class="mb-3">
+              <span class="badge bg-danger">Laravel</span>
+              <span class="badge bg-primary">Bootstrap</span>
+              <span class="badge bg-warning">JQuery</span>
+              <span class="badge" style="background-color: deeppink">Sass</span>
+            </div>
+            <p class="text-white px-5 opacity-75 text-portfolio">
               Novelpedia is an online platform dedicated to providing a comprehensive collection of novels from various genres. It serves as a digital library where users can explore and discover a wide range of novels
             </p>
-
-            <a href="https://github.com/arizaakmal/novelpedia" target="_blank" class="btn btn-secondary mb-3">
+            <a href="https://github.com/arizaakmal/novelpedia" target="_blank" class="btn mb-3 btn-outline-secondary">
               Github
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                 <path
@@ -453,23 +465,6 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-
-      gsap.to(".status", { duration: 1.5, text: "College Student", delay: 2.5, repeat: -1, yoyo: true, repeatDelay: 3 });
-
-      //cara agar coding diatas web developer hilang dulu baru ganti kata College Student
-
-      gsap.from(".hi", { duration: 1, opacity: 0, y: -500, delay: 1.5 });
-      gsap.from(".nama", { duration: 1, opacity: 0, y: -500, delay: 1 });
-      gsap.from(".status", { duration: 1, opacity: 0, y: -500, delay: 0.5 });
-      gsap.from(".my-4", { duration: 1, opacity: 0, y: 500, delay: 0.5 });
-      gsap.from(".bi-chevron-down", { duration: 1, opacity: 0, y: 500, delay: 1 });
-    </script>
-
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -523,32 +518,13 @@
 
     <!-- Javascript Typewriter -->
     <script>
-      const texts = ["Web Developer", "College Student"]; // Ganti dengan teks yang diinginkan
-      const delay = 200; // Waktu penundaan antara pergantian teks (dalam milidetik)
+      var app = document.getElementById("app");
 
-      let textIndex = 0;
-      let charIndex = 0;
-      let timer = null;
-      const typewriterSpan = document.querySelector(".typewriter");
+      var typewriter = new Typewriter(app, {
+        loop: true,
+      });
 
-      function type() {
-        if (charIndex < texts[textIndex].length) {
-          typewriterSpan.textContent = texts[textIndex].substring(0, charIndex + 1);
-          charIndex++;
-          timer = setTimeout(type, delay);
-        } else {
-          clearTimeout(timer); // Menghapus timeout saat ini sebelum menunggu jeda
-          timer = setTimeout(changeText, delay); // Jeda sebelum pergantian teks
-        }
-      }
-
-      function changeText() {
-        charIndex = 0;
-        textIndex = (textIndex + 1) % texts.length;
-        type(); // Mulai kembali animasi typewriter dengan teks baru
-      }
-
-      type();
+      typewriter.typeString("Web Developer").pauseFor(2500).deleteAll().typeString("College Student").pauseFor(2500).start();
     </script>
 
     <!-- Javascript Contact Form -->

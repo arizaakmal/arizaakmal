@@ -310,30 +310,18 @@ form:not(.sending) .btn[type="submit"] {
 }
 
 .typewriter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 0.15em solid honeydew; /* Ganti dengan warna garis yang diinginkan */
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: 0.15em; /* Jarak antara huruf */
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
+@media (max-width: 768px) {
+  .img-portfolio {
+    width: 75% !important;
   }
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: honeydew; /* Ganti dengan warna garis yang diinginkan */
+@media (max-width: 576px) {
+  .text-portfolio {
+    display: none;
   }
 }

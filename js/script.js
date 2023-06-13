@@ -1,3 +1,8 @@
+//membuat halaman preloader
+$(window).on("load", function () {
+  $(".preloader").fadeOut("slow");
+});
+
 $(document).ready(function () {
   $(window).scrollTop(0);
 
@@ -41,9 +46,4 @@ $(document).ready(function () {
   });
   // fadeTo dijalankan setelah 3s
   $("#fadeTo").fadeTo(7000, 0);
-
-  //membuat halaman preloader
-  $(window).on("load", function () {
-    $(".preloader").fadeOut("slow");
-  });
 });
