@@ -17,9 +17,11 @@ body {
 }
 
 .logo {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
 }
 .logo:hover {
+  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
@@ -139,6 +141,7 @@ th {
 }
 
 .fadeIn {
+  -webkit-animation: fadeIn 1.5s;
   animation: fadeIn 1.5s;
 }
 
@@ -237,12 +240,8 @@ form:not(.sending) .btn[type=submit] {
   z-index: 1;
 }
 
-.icon-skill {
+div .icon-skill {
   width: 96px;
-  opacity: 0.5;
-}
-.icon-skill:hover {
-  opacity: 0.8;
 }
 
 .typewriter {
@@ -259,4 +258,6 @@ form:not(.sending) .btn[type=submit] {
   .text-portfolio {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

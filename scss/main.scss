@@ -301,12 +301,12 @@ form:not(.sending) .btn[type="submit"] {
   z-index: 1;
 }
 
-.icon-skill {
+div .icon-skill {
   width: 96px;
-  opacity: 0.5;
-  &:hover {
-    opacity: 0.8;
-  }
+  // opacity: 0.5 !important;
+  // &:hover {
+  //   opacity: 0.8 !important;
+  // }
 }
 
 .typewriter {

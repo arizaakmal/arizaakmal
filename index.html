@@ -157,19 +157,19 @@
         </div>
         <div class="container d-block col-sm-6 col-md-8">
           <div class="row justify-content-center">
-            <img src="img/skills/html-5.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="html-5" />
-            <img src="img/skills/css-3.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="css-3" />
-            <img src="img/skills/js.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="js" />
-            <img src="img/skills/php.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="php" />
-            <img src="img/skills/sass.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sass" />
-            <img src="img/skills/jquery-plain-wordmark.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="jquery-plain-wordmark" />
-            <img src="img/skills/mysql.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="mysql" />
-            <img src="img/skills/bootstrap.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="bootstrap" />
-            <img src="img/skills/tailwind-css.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="tailwind-css" />
-            <img src="img/skills/laravel.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="laravel" />
-            <img src="img/skills/git.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="git" />
-            <img src="img/skills/visual-studio-code.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="visual-studio-code" />
-            <img src="img/skills/figma.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="figma" />
+            <img src="img/skills/html-5.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="html-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="HTML 5" />
+            <img src="img/skills/css-3.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="css-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="CSS 3" />
+            <img src="img/skills/js.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="js" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="JavaScript" />
+            <img src="img/skills/php.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="php" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="PHP" />
+            <img src="img/skills/sass.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="sass" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="SASS" />
+            <img src="img/skills/jquery-plain-wordmark.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="jquery-plain-wordmark" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="jQuery" />
+            <img src="img/skills/mysql.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="mysql" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="MySQL" />
+            <img src="img/skills/bootstrap.png" class="icon-skill m-3 col-sm-2 col-md-4" alt="bootstrap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Bootstrap" />
+            <img src="img/skills/tailwind-css.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="tailwind-css" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tailwind CSS" />
+            <img src="img/skills/laravel.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="laravel" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Laravel" />
+            <img src="img/skills/git.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="git" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Git" />
+            <img src="img/skills/visual-studio-code.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="visual-studio-code" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Visual Studio Code" />
+            <img src="img/skills/figma.svg" class="icon-skill m-3 col-sm-2 col-md-4" alt="figma" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Figma" />
           </div>
         </div>
       </div>
@@ -360,6 +360,12 @@
 
     <!-- Boostrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tooltip -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
