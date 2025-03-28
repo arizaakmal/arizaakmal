@@ -18,7 +18,6 @@ body {
 }
 
 .logo {
-  //make img infinite rotate 360degree on hover
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   &:hover {
@@ -26,11 +25,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
-// .logo:hover {
-//   // -webkit-transform: rotate(360deg);
-//   // transform: rotate(360deg);
-// }
 
 .nav-item {
   display: inline-block;
@@ -70,8 +64,6 @@ body {
   bottom: 1px;
   z-index: -1;
   padding-top: 7rem;
-
-  // opacity: 0.8;
 }
 
 .navbar {
@@ -103,39 +95,13 @@ hr {
   height: 2px;
   background-color: darkred;
 }
-// .line {
-//   width: 100%;
-//   height: 5px;
-//   border: none;
-//   background-color: #6c757d;
-//   margin: auto;
-// }
-
-// .lineMedium {
-//   width: 50%;
-//   height: 5px;
-//   border: none;
-//   background-color: #6c757d;
-//   margin: auto;
-// }
-
-// .lineShort {
-//   width: 5%;
-//   height: 5px;
-//   border: none;
-//   background-color: #6c757d;
-//   margin: auto;
-// }
 
 .category {
   font-size: 12px;
   margin-right: 3px;
   padding: 2px 7px;
-  // padding-top: 3px;
-  // padding-bottom: 3px;
 }
 
-//make logo in class footer-link like in navbar
 .footer-link {
   font-size: 1.5rem;
   font-weight: 700;
@@ -151,7 +117,6 @@ section {
   color: white;
   opacity: 0.5;
 
-  //make icon opacity 1 when hover
   &:hover {
     opacity: 0.8;
   }
@@ -218,7 +183,6 @@ th {
 
   &:hover {
     color: black;
-    // border-bottom: 2px solid black;
     text-decoration: underline;
   }
 }
@@ -227,10 +191,6 @@ th {
   border: none;
   outline: none;
 }
-
-// .nav-page {
-//   margin-inline-start: 450px;
-// }
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -258,12 +218,6 @@ form:not(.sending) .btn[type="submit"] {
   display: inline-block;
 }
 
-// .swiper-pagination {
-//    color: #3e2bce !important; /* warna teks */
-//   background-color: #3e2bce !important; /* warna latar belakang */
-// }
-
-/* warna latar belakang untuk tanda halaman yang tidak aktif */
 .swiper-pagination-bullet {
   opacity: 0.5 !important;
   background-color: #c7c7cf !important;
@@ -271,19 +225,12 @@ form:not(.sending) .btn[type="submit"] {
 
 .swiper-pagination-bullet-active {
   opacity: 1 !important;
-  background-color: #198754 !important; /* warna latar belakang untuk tanda halaman yang aktif */
+  background-color: #198754 !important;
 }
 
-//buat swiper-button-next dan swiper-button-prev ketika di hover muncul warna background dan berbentuk lingkaran
 .swiper-button-next,
 .swiper-button-prev {
-  // background-color: #198754;
-  // border-radius: 50%;
   padding: 2rem;
-  // width: 22px !important;
-  // height: 22px !important;
-  //rounded circle
-  // width: 0.5rem !important;
 
   border-radius: 50%;
   opacity: 0.3;
@@ -303,15 +250,11 @@ form:not(.sending) .btn[type="submit"] {
 
 div .icon-skill {
   width: 96px;
-  // opacity: 0.5 !important;
-  // &:hover {
-  //   opacity: 0.8 !important;
-  // }
 }
 
 .typewriter {
   white-space: nowrap;
-  letter-spacing: 0.15em; /* Jarak antara huruf */
+  letter-spacing: 0.15em;
 }
 
 @media (max-width: 768px) {
@@ -319,6 +262,8 @@ div .icon-skill {
     width: 75% !important;
   }
 }
+
+
 
 @media (max-width: 576px) {
   .text-portfolio {

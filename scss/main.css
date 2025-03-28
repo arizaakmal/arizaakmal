@@ -197,7 +197,7 @@ form.sending .btn-loading {
   display: inline-block;
 }
 
-form.sending .btn[type=submit] {
+form.sending .btn[type="submit"] {
   display: none;
 }
 
@@ -205,7 +205,7 @@ form:not(.sending) .btn-loading {
   display: none;
 }
 
-form:not(.sending) .btn[type=submit] {
+form:not(.sending) .btn[type="submit"] {
   display: inline-block;
 }
 
@@ -258,6 +258,11 @@ div .icon-skill {
   .text-portfolio {
     display: none;
   }
+}
+
+.scroll-top a:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
