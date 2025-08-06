@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ariza Akmal Syahida | Web Developer</title>
 
-    <!-- jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- TypewriterJS -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- CSS -->
+    <!-- Boostrap CSS - Latest Version -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap CSS Fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" media="print" onload="this.media='all'" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.min.css" />
+    <!-- Custom CSS Fallback -->
+    <link rel="stylesheet" href="scss/main.css" media="print" onload="this.media='all'" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
@@ -138,7 +137,7 @@
               <a href="https://home.amikom.ac.id/" class="link" target="_blank">Amikom University</a>. I have hands-on experience building web applications using <strong>Laravel</strong> and <strong>Express.js</strong> for the backend, and
               <strong>React</strong> for the frontend. I'm passionate about continuous learning and committed to growing as a <strong>Full Stack Web Developer</strong>.
             </p>
-            <a href="/cv/CV.pdf" target="_blank" class="btn btn-outline-dark mt-3">DOWNLOAD MY CV</a>
+            <a href="cv/CV.pdf" target="_blank" class="btn btn-outline-dark mt-3">DOWNLOAD MY CV</a>
           </div>
         </div>
       </div>
@@ -207,7 +206,7 @@
               <div class="container bg-dark text-center rounded-3 w-100 mb-3 h-100" data-aos="flip-up" data-aos-duration="1000">
                 <h4 class="text-white pt-5 opacity-75">Sadewa</h4>
                 <div class="mb-3">
-                  <img src="/img/portfolio/sadewa.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
+                  <img src="img/portfolio/sadewa.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
                 </div>
                 <div class="mb-3">
                   <span class="badge bg-danger">Laravel</span>
@@ -234,7 +233,7 @@
               <div class="container bg-dark text-center rounded-3 w-100 h-100" data-aos="flip-up" data-aos-duration="1000">
                 <h4 class="text-white pt-5 opacity-75">Janaka</h4>
                 <div class="mb-3">
-                  <img src="/img/portfolio/janaka.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
+                  <img src="img/portfolio/janaka.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
                 </div>
                 <div class="mb-3">
                   <span class="badge bg-danger">Laravel</span>
@@ -263,7 +262,7 @@
               <div class="container bg-dark text-center rounded-3 w-100 mb-3 h-100" data-aos="flip-up" data-aos-duration="1000">
                 <h4 class="text-white pt-5 opacity-75">Geo Quizz</h4>
                 <div class="mb-3">
-                  <img src="/img/portfolio/geo-quizz.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
+                  <img src="img/portfolio/geo-quizz.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
                 </div>
                 <div class="mb-3">
                   <span class="badge" style="background-color: #087ea7">React JS</span>
@@ -298,7 +297,7 @@
               <div class="container bg-dark text-center rounded-3 w-100 h-100" data-aos="flip-up" data-aos-duration="1000">
                 <h4 class="text-white pt-5 opacity-75">Todo List</h4>
                 <div class="mb-3">
-                  <img src="/img/portfolio/todo-list.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
+                  <img src="img/portfolio/todo-list.png" alt="gambar" class="w-50 img-fluid img-portfolio" />
                 </div>
                 <div class="mb-3">
                   <span class="badge" style="background-color: #4f5b93">PHP</span>
@@ -447,17 +446,30 @@
       </a>
     </div>
 
-    <!-- Boostrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Boostrap JavaScript - Latest Version -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Fallback -->
+    <script>
+      if (typeof bootstrap == "undefined") {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"><\/script>');
+      }
+    </script>
+
+    <!-- TypewriterJS -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Tooltip -->
     <script>
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
       const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
     </script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       const skills = document.querySelectorAll(".icon-skill");
       const cards = document.querySelectorAll(".card");
@@ -515,5 +527,8 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
