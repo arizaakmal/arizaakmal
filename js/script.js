@@ -46,4 +46,30 @@ $(document).ready(function () {
   });
   // fadeTo dijalankan setelah 3s
   $("#fadeTo").fadeTo(7000, 0);
+
+  // Scrollspy — move active underline to current section
+  var sections = $("section[id]");
+  var navLinks = $(".navbar-nav .nav-link[href^='#']");
+
+  $(window).on("scroll", function () {
+    var scrollPos = $(document).scrollTop() + 100; // offset for fixed navbar
+
+    sections.each(function () {
+      var section = $(this);
+      var top = section.offset().top;
+      var bottom = top + section.outerHeight();
+
+      if (scrollPos >= top && scrollPos < bottom) {
+        var id = section.attr("id");
+        navLinks.closest(".nav-item").removeClass("active");
+        navLinks.filter('[href="#' + id + '"]').closest(".nav-item").addClass("active");
+      }
+    });
+
+    // If at top of page, activate Home
+    if ($(document).scrollTop() < 100) {
+      navLinks.closest(".nav-item").removeClass("active");
+      navLinks.filter('[href="#home"]').closest(".nav-item").addClass("active");
+    }
+  }).trigger("scroll"); // trigger on load
 });

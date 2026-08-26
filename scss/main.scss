@@ -270,3 +270,320 @@ div .icon-skill {
     display: none;
   }
 }
+
+/* ===== Enhancement (tema gelap + aksen darkred tetap dipertahankan) ===== */
+
+/* Font & smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.4s ease;
+}
+
+.navbar .nav-link {
+  position: relative;
+  opacity: 0.85;
+  transition: color 0.3s ease, opacity 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: darkred;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: #fff;
+    opacity: 1;
+
+    &::after {
+      width: 60%;
+    }
+  }
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #fff;
+  opacity: 1;
+
+  &::after {
+    width: 60%;
+  }
+}
+
+/* Jumbotron / Hero */
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 1;
+
+  > * {
+    animation: heroFadeUp 1s ease backwards;
+  }
+
+  > *:nth-child(1) { animation-delay: 0.15s; }
+  > *:nth-child(2) { animation-delay: 0.3s; }
+  > *:nth-child(3) { animation-delay: 0.45s; }
+  > *:nth-child(4) { animation-delay: 0.6s; }
+  > *:nth-child(5) { animation-delay: 0.75s; }
+  > *:nth-child(6) { animation-delay: 0.9s; }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #fff;
+  border: 1px solid rgba(139, 0, 0, 0.7);
+  border-radius: 50rem;
+  background-color: rgba(139, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff4d4d;
+  box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6);
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 9px rgba(255, 77, 77, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
+  }
+}
+
+.hero-name {
+  opacity: 0.75;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 30px rgba(139, 0, 0, 0.55);
+}
+
+.jumbotron::before,
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.jumbotron::before {
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(139, 0, 0, 0.45), transparent 70%);
+  animation: blobFloatA 12s ease-in-out infinite alternate;
+}
+
+.jumbotron::after {
+  bottom: -140px;
+  right: -100px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(80, 0, 0, 0.5), transparent 70%);
+  animation: blobFloatB 14s ease-in-out infinite alternate;
+}
+
+@keyframes blobFloatA {
+  from { transform: translate(0, 0); }
+  to { transform: translate(70px, 50px); }
+}
+
+@keyframes blobFloatB {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-60px, -40px); }
+}
+
+.chevron-bounce {
+  display: inline-block;
+  animation: chevronBounce 1.8s infinite;
+}
+
+@keyframes chevronBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* About photo glow ring */
+.photo-glow {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  isolation: isolate;
+
+  img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+    box-shadow: 0 0 35px rgba(139, 0, 0, 0.55);
+  }
+}
+
+/* Skills hover */
+.icon-skill {
+  transition: transform 0.35s ease, filter 0.35s ease;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.08);
+    filter: drop-shadow(0 10px 18px rgba(139, 0, 0, 0.65));
+  }
+}
+
+/* Portfolio cards */
+.portfolio .container.bg-dark {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+  border: 1px solid transparent;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: rgba(139, 0, 0, 0.6);
+    box-shadow: 0 18px 40px rgba(139, 0, 0, 0.28);
+  }
+
+  h4 {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: darkred;
+      border-radius: 2px;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+  }
+
+  &:hover h4::after {
+    width: 45px;
+  }
+}
+
+.img-portfolio {
+  border-radius: 0.5rem;
+  transition: transform 0.45s ease;
+
+  .portfolio .container.bg-dark:hover & {
+    transform: scale(1.04);
+  }
+}
+
+.badge {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.btn-outline-secondary {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: darkred;
+    border-color: darkred;
+  }
+}
+
+/* Contact form focus */
+.form-control:focus {
+  border-color: darkred;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(139, 0, 0, 0.55);
+}
+
+.form-control {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover:not(:focus) {
+    border-color: #6c757d;
+  }
+}
+
+.btn-dark {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* Footer icons */
+.footer li {
+  margin-right: 1rem;
+}
+
+.footer .icon-white {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.15);
+    opacity: 1;
+    color: #ff6b6b !important;
+  }
+}
